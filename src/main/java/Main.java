@@ -22,11 +22,11 @@ public class Main {
         ClassList cl=new ClassList();
         if (email.equalsIgnoreCase("admin") && (password.equalsIgnoreCase("adminhero"))) {
             while(true){
-                System.out.println("What would you like to do? (1/2/3/4/5)");
+                System.out.println("please choose one (1/2/3/4/5)");
                 System.out.println("1. Add User");
-                System.out.println("2. View User");
+                System.out.println("2. View User list");
                 System.out.println("3. Add Class");
-                System.out.println("4. View Class");
+                System.out.println("4. View Class list");
                 System.out.println("5. Log out");
                 String selection=sc.next();
 
@@ -41,7 +41,7 @@ public class Main {
 
 
                     for(UserList b:new_UserList){
-                        System.out.printf("| %-2d | %-22s | %-14s |\n", b.getId(), b.getUsername(), b.getPassword());
+                        System.out.printf("| | |  |\n", b.getId(), b.getUsername(), b.getPassword());
 
 
                     } System.out.println("************************************************");
@@ -56,7 +56,7 @@ public class Main {
 
 
                     for(ClassList b:new_ClassList){
-                        System.out.printf("| %-2d | %-22s |\n", b.getId(), b.getClassname());
+                        System.out.printf("|  |  |\n", b.getId(), b.getClassname());
 
 
                     } System.out.println("************************************************");
@@ -75,7 +75,7 @@ public class Main {
 
 
             for(ClassList b:new_ClassList){
-                System.out.printf("| %-2d | %-22s |\n", b.getId(), b.getClassname());
+                System.out.printf("|  | |\n", b.getId(), b.getClassname());
 
 
             } System.out.println("****************************************************************");
